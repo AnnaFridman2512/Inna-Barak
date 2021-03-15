@@ -1,0 +1,71 @@
+@media screen and (max-width: 1599px) {
+    body, .responsive {
+      width: 100%;
+      height: auto;
+    }
+    
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+  *{
+    box-sizing: border-box;  
+    font-family: 'Alef', sans-serif;
+   }
+
+nav{
+    margin-top: 0px;
+    background-color: #090706;
+    height: 40px;
+    border-bottom: 1px solid #D06555;
+   }
+  
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    }
+
+nav ul li{ 
+    height: 40px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+
+nav ul li a{
+    padding: 5px;
+    text-decoration: none;
+    color: #FFFF;
+    }
+    
+nav ul li:hover a{
+    cursor: pointer;
+    color: #090706;
+    background-color:  rgba(255, 232, 229, 0.5);
+    }
+
+body{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: rgba(255, 232, 229, 0.5);
+ }
+ 
+header{
+    max-width: 1600px;
+    display:flex;   
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #FFFF;
+}
+
+header img{   
+    width:800px;
+    height: 480px;
+}
+
+
+
+
