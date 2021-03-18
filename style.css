@@ -1,58 +1,81 @@
 @media screen and (max-width: 1599px) {
-    body, .responsive {
+   .nav-links, body, .responsive {
       width: 100%;
       height: auto;
-    }
-    
+    }   
+  
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
   *{
     box-sizing: border-box;  
-    font-family: 'Alef', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
    }
 
 nav{
-    margin-top: 0px;
-    background-color: #090706;
-    height: 40px;
-    border-bottom: 1px solid #D06555;
+    position: fixed;
+    z-index: 10;
+    left:0;
+    right: 0;
+    top: 0;
+    margin: 0px;
+    height: 60px;
+    background-color: rgb(9, 7, 6);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
    }
   
-nav ul{
+.nav-links {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    margin-top: 0px;
+    align-items: center;
+    margin: 0px;
     }
 
-nav ul li{ 
-    height: 40px;
-    margin: 0px;
+
+.nav-links li{
+    height: 60px;
+    width: 300px;
+    margin: 0px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     }
 
-nav ul li a{
+.nav-links a{
     padding: 5px;
     text-decoration: none;
-    color: #FFFF;
+    color: rgb(224, 224, 224);
+    font-size: 15px;
+    letter-spacing: 5px;
     }
     
-nav ul li:hover a{
+.nav-links li:hover{
     cursor: pointer;
-    color: #090706;
     background-color:  rgba(255, 232, 229, 0.5);
     }
 
-body{
-    max-width: 1600px;
-    margin: 0 auto;
-    background-color: rgba(255, 232, 229, 0.5);
- }
- 
+
+.burger div{
+    width: 30px;
+    height: 3px;
+    background-color: rgb(224, 224, 224);
+    margin: 5px;
+} 
+
+.burger{
+    display: none;
+}    
+
 header{
     max-width: 1600px;
     display:flex;   
@@ -64,8 +87,56 @@ header{
 header img{   
     width:800px;
     height: 480px;
+    border-bottom: 0.5px solid #D06555;
 }
 
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
 
+    nav{
+        display: flex;
+        justify-content: flex-start;
+    }
+   
+    .burger{
+        display: block;
+        padding-right: 5px;;
+        cursor: pointer;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 93vh;
+        top: 7vh;
+        background-color: rgb(9, 7, 6, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:fit-content;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding-inline-start: 0px;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links {
+        opacity: 0;
+    }
+     
+   }
+
+   body{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: rgba(255, 232, 229, 0.5);
+ }
+ 
+ .nav-active{
+     transform: translateX(0%);
+ }
 
 
