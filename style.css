@@ -1,4 +1,4 @@
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1024px) {
    .nav-links, body, .responsive {
       width: 100%;
       height: auto;
@@ -91,6 +91,8 @@ nav{
    
     .burger{
         display: block;
+        width:40px;
+        height:40px;
         padding-right: 5px;;
         cursor: pointer;
     }
@@ -103,6 +105,7 @@ nav{
         background-color: rgb(9, 7, 6, 0.9);
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         width:fit-content;
         margin-block-start: 0em;
@@ -110,6 +113,7 @@ nav{
         padding-inline-start: 0px;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        
     }
 
     .nav-links li{
