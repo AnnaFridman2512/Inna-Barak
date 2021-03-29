@@ -112,13 +112,13 @@ main{
     margin: 0 auto;
 }
 
-.both-about-and-carousel{
+.both-about-and-carousel, .both-about-and-carousel2  {
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.about-carousel-container{
+.about-carousel-container,.about-carousel-container2 {
     min-width: 280px;
     flex:1;
     padding: 10px; 
@@ -127,27 +127,27 @@ main{
     justify-content: center;
 }
 
-.outerDiv{
+.outerDiv, .outerDiv2{
     flex:1;
     width: 350px;
     background-color:  white;
     position: relative;
 }
 
-.carousel-container{  
+.carousel-container, .carousel-container2{  
     width: inherit;
     margin: auto;
     overflow: hidden;
 }
 
-.carousel-slide{
+.carousel-slide, .carousel-slide2{
    display: flex;
    width: 100%;
    height: auto;
    padding: 10px 0px;
 }
 
-.prevBtn{
+.prevBtn, .prevBtn2{
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -158,7 +158,7 @@ main{
     cursor: pointer;
 }
 
-.nextBtn{
+.nextBtn, .nextBtn2{
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -170,29 +170,29 @@ main{
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-links, body, header, .responsive, .carousel-slide img {
+    .nav-links, body, header, .responsive, .carousel-slide img, .carousel-slide2 img {
        width: 100%;
        height: auto;
      }   
 
-     .both-about-and-carousel{
+     .both-about-and-carousel, .both-about-and-carousel2{
         flex-direction: column;
     }
 
-    .outerDiv{
+    .outerDiv, .outerDiv2{
         overflow: hidden;
         width: 350px;
         margin: 0 auto;
     }
 
-    .carousel-slide{
+    .carousel-slide, .carousel-slide2{
         display: flex;
         width: 350px;
         margin: 0 auto;
         
     }
 
-    .outerDiv .carousel-slide img{
+    .outerDiv .carousel-slide img, .outerDiv2 .carousel-slide2 img{
         width: 350px;
         height: auto;
     }
@@ -258,24 +258,24 @@ main{
         }
     }
     
-    .both-about-and-carousel{
+    .both-about-and-carousel, .both-about-and-carousel2{
         display: flex;
         flex-direction: column;
     }
 
-    .outerDiv{   
+    .outerDiv, .outerDiv2{   
         width:350px;
         margin: 0 auto;
     }
 
-    .carousel-slide{
+    .carousel-slide, .carousel-slide2{
       
         display: flex;
         width: 350px;  
         margin: 0 auto;
     }
 
-    .carousel-container .carousel-slide img{
+    .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img{
         width:350px;
         height: auto;
         margin:0 auto;
@@ -342,24 +342,24 @@ main{
         }
     }
     
-    .both-about-and-carousel{
+    .both-about-and-carousel, .both-about-and-carousel2{
         display: flex;
         flex-direction: column;
     }
 
-    .about-carousel-container, .outerDiv{   
+    .about-carousel-container, .outerDiv, .about-carousel-container2, .outerDiv2{   
         width:280px;
         margin: 0 auto;
     }
 
-    .carousel-slide{
+    .carousel-slide, .carousel-slide2{
 
         display: flex;
         width: 280px;  
         margin: 0 auto;
     }
 
-    .carousel-container .carousel-slide img{
+    .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img{
         width:280px;
         height: auto;
         margin:0 auto;
