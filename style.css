@@ -325,7 +325,9 @@ footer a{
 
 @media screen and (max-width: 769px) {
 
-
+    .nextBtn, .nextBtn2, .nextBtn3, .nextBtn4, .prevBtn, .prevBtn2, .prevBtn3, .prevBtn4{
+        display: none;
+    }
 
     .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img, .carousel-container3 .carousel-slide3 img, .carousel-container4 .carousel-slide4 img{
         width:350px;
@@ -338,11 +340,11 @@ footer a{
 }
 
 @media screen and (max-width: 320px){
-
-    .nav-links li{
-        width: 100%;
+    .nav-links ul, .nav-links li,.nav-links li a{
+        width: 280px;
     }
-
+    
+  
     .about-carousel-container, .outerDiv, .about-carousel-container2, .outerDiv2, .about-carousel-container3, .outerDiv3, .about-carousel-container4, .outerDiv4, .both-about-and-profilePic, .outerDiv5{   
         width:280px;
         margin: 0 auto;
@@ -357,6 +359,10 @@ footer a{
         height: auto;
         margin:0 auto;
         
+    }
+
+    #footer ul li {
+      margin: 0 auto;
     }
 
 }
