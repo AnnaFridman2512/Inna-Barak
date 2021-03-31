@@ -44,7 +44,7 @@ nav{
     align-items: center;
     }
 
-.nav-links a{
+.nav-links li a{
     padding: 5px;
     text-decoration: none;
     color: rgb(224, 224, 224);
@@ -59,6 +59,7 @@ nav{
     align-items: center;
     }
     
+  
 .nav-links li:hover{
     cursor: pointer;
     background-color:  rgba(255, 232, 229, 0.5);
@@ -89,12 +90,13 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
  
 header{
     max-width: 1600px;
     display:flex;   
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     background-color: #FFFF;
     border-bottom: 1px solid rgba(208, 101, 85, 0.5);
 }
@@ -145,6 +147,8 @@ main{
     width: 350px;
     background-color:  white;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .outerDiv5{
@@ -167,10 +171,10 @@ main{
 
 .prevBtn, .prevBtn2, .prevBtn3, .prevBtn4{
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 10;
     right: 5%;
-    font-size: 50px;
+    font-size: 100px;
     color: rgba(9,7,6,0.2);
     opacity: 0.7;
     cursor: pointer;
@@ -178,10 +182,10 @@ main{
 
 .nextBtn, .nextBtn2, .nextBtn3, .nextBtn4{
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 10;
     left: 5%;
-    font-size: 50px;
+    font-size: 100px;
     color: rgba(9,7,6,0.3);;
     opacity: 0.7;
     cursor: pointer;
@@ -189,19 +193,22 @@ main{
 
 footer{
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     background-color: rgb(9, 7, 6); 
     color:rgb(224, 224, 224);
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 footer ul{
     width: 80%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     list-style: none;
     letter-spacing: 5px;
 }
@@ -210,11 +217,20 @@ footer ul span{
     font-size: 25px;
 }
 
+footer ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
 footer a{
     color:rgb(224, 224, 224);
     text-decoration: none;
     letter-spacing: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -247,6 +263,10 @@ footer a{
     .outerDiv .carousel-slide img, .outerDiv2 .carousel-slide2 img ,.outerDiv3 .carousel-slide3 img, .outerDiv4 .carousel-slide4 img{
         width: 350px;
         height: auto;
+    }
+
+    footer{
+        height: 120px;
     }
    
    }
@@ -311,6 +331,10 @@ footer a{
         height: auto;
         margin:0 auto;
         
+    }
+
+    footer{
+        height: 180px;
     }
     
 }
