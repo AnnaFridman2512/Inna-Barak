@@ -109,13 +109,13 @@ main{
     margin: 0 auto;
 }
 
-.both-about-and-carousel, .both-about-and-carousel2, .both-about-and-carousel3{
+.both-about-and-carousel, .both-about-and-carousel2, .both-about-and-carousel3, .both-about-and-carousel4{
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.about-carousel-container,.about-carousel-container2, .about-carousel-container3 {
+.about-carousel-container,.about-carousel-container2, .about-carousel-container3, .about-carousel-container4{
     min-width: 280px;
     flex:1;
     padding: 10px; 
@@ -124,38 +124,38 @@ main{
     justify-content: center;
 }
 
-.outerDiv, .outerDiv2, .outerDiv3{
+.outerDiv, .outerDiv2, .outerDiv3, .outerDiv4{
     flex:1;
     width: 350px;
     background-color:  white;
     position: relative;
 }
 
-.carousel-container, .carousel-container2, .carousel-container3{  
+.carousel-container, .carousel-container2, .carousel-container3, .carousel-container4{  
     width: inherit;
     margin: auto;
     overflow: hidden;
 }
 
-.carousel-slide, .carousel-slide2, .carousel-slide3{
+.carousel-slide, .carousel-slide2, .carousel-slide3, .carousel-slide4{
    display: flex;
    width: 100%;
    height: auto;
    padding: 10px 0px;
 }
 
-.prevBtn, .prevBtn2, .prevBtn3{
+.prevBtn, .prevBtn2, .prevBtn3, .prevBtn4{
     position: absolute;
     top: 50%;
     z-index: 10;
     right: 5%;
     font-size: 50px;
-    color: rgba(9,7,6,0.3);
+    color: rgba(9,7,6,0.2);
     opacity: 0.7;
     cursor: pointer;
 }
 
-.nextBtn, .nextBtn2, .nextBtn3{
+.nextBtn, .nextBtn2, .nextBtn3, .nextBtn4{
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -167,7 +167,7 @@ main{
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-links, body, header, .responsive, .carousel-slide img, .carousel-slide2 img, .carousel-slide3 img{
+    .nav-links, body, header, .responsive, .carousel-slide img, .carousel-slide2 img, .carousel-slide3 img, .carousel-slide4 img{
        width: 100%;
        height: auto;
      }   
@@ -176,24 +176,24 @@ main{
         flex-direction: column;
     }
 
-    .both-about-and-carousel2{
+    .both-about-and-carousel2, .both-about-and-carousel4{
         flex-direction: column-reverse;
     }
 
-    .outerDiv, .outerDiv2, .outerDiv3{
+    .outerDiv, .outerDiv2, .outerDiv3, .outerDiv4{
         overflow: hidden;
         width: 350px;
         margin: 0 auto;
     }
 
-    .carousel-slide, .carousel-slide2, .carousel-slide3{
+    .carousel-slide, .carousel-slide2, .carousel-slide3, .carousel-slide4{
         display: flex;
         width: 350px;
         margin: 0 auto;
         
     }
 
-    .outerDiv .carousel-slide img, .outerDiv2 .carousel-slide2 img ,.outerDiv3 .carousel-slide3 img{
+    .outerDiv .carousel-slide img, .outerDiv2 .carousel-slide2 img ,.outerDiv3 .carousel-slide3 img, .outerDiv4 .carousel-slide4 img{
         width: 350px;
         height: auto;
     }
@@ -255,7 +255,7 @@ main{
         }
     }
 
-    .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img, .about-carousel-container3 .carousel-slide3 img{
+    .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img, .carousel-container3 .carousel-slide3 img, .carousel-container4 .carousel-slide4 img{
         width:350px;
         height: auto;
         margin:0 auto;
@@ -266,16 +266,16 @@ main{
 
 @media screen and (max-width: 320px){
 
-    .about-carousel-container, .outerDiv, .about-carousel-container2, .outerDiv2, .about-carousel-container3, .outerDiv3{   
+    .about-carousel-container, .outerDiv, .about-carousel-container2, .outerDiv2, .about-carousel-container3, .outerDiv3, .about-carousel-container4, .outerDiv4{   
         width:280px;
         margin: 0 auto;
     }
 
-    .carousel-slide, .carousel-slide2, .carousel-slide3{
+    .carousel-slide, .carousel-slide2, .carousel-slide3, .carousel-slide4{
         width: 280px;  
     }
 
-    .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img, .carousel-container3 .carousel-slide3 img{
+    .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img, .carousel-container3 .carousel-slide3 img, .carousel-container4 .carousel-slide4 img{
         width:280px;
         height: auto;
         margin:0 auto;

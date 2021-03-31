@@ -119,16 +119,16 @@ carouselSlide2.addEventListener('transitionend', ()=>{
 const carouselSlide3 = document.querySelector('.carousel-slide3');    
 const carouselImages3 = document.querySelectorAll('.carousel-slide3 img');
 
-//Buttons 
+//Buttons3 
 const prevBtn3 = document.querySelector('.prevBtn3');
 const nextBtn3 = document.querySelector('.nextBtn3');
 
-//Counter
+//Counter3
 let counter3 = 1;
 const size3 = carouselImages3[0].clientWidth;
 carouselSlide3.style.transform = 'translateX(' + (size3 * counter3) + 'px)' ;
 
-//Button Listeners
+//Button Listeners3
 nextBtn3.addEventListener('click', () => {
     if(counter3 >= carouselImages3.length -1) return;
     carouselSlide3.style.transition = "transform 0.4s ease-in-out";
@@ -158,5 +158,51 @@ carouselSlide3.addEventListener('transitionend', ()=>{
          carouselSlide3.style.transition = "none";
          counter3 = carouselImages3.length - counter3;
      carouselSlide3.style.transform = 'translateX(' + (size3 * counter3) + 'px)' ;
+     }    
+  });
+
+
+const carouselSlide4 = document.querySelector('.carousel-slide4');    
+const carouselImages4 = document.querySelectorAll('.carousel-slide4 img');
+
+//Buttons4
+const prevBtn4 = document.querySelector('.prevBtn4');
+const nextBtn4 = document.querySelector('.nextBtn4');
+
+//Counter
+let counter4 = 1;
+const size4 = carouselImages4[0].clientWidth;
+carouselSlide4.style.transform = 'translateX(' + (size4 * counter4) + 'px)' ;
+
+//Button Listeners4
+nextBtn4.addEventListener('click', () => {
+    if(counter4 >= carouselImages4.length -1) return;
+    carouselSlide4.style.transition = "transform 0.4s ease-in-out";
+    counter4++;
+carouselSlide4.style.transform = 'translateX('+ (size4 * counter4) + 'px)' ;
+});
+
+
+prevBtn4.addEventListener('click', () => {
+    if(counter4 <= 0) return;
+    carouselSlide4.style.transition = "transform 0.4s ease-in-out";
+    counter4--;
+    carouselSlide4.style.transform = 'translateX('+ (size4 * counter4) + 'px)' ;
+});
+
+carouselSlide4.addEventListener('transitionend', ()=>{
+  if(carouselImages4[counter4].className === 'lastClone4'){
+       carouselSlide4.style.transition = "none";
+       counter4 = carouselImages4.length - 2 ;
+   carouselSlide4.style.transform = 'translateX(' + (size4 * counter4) + 'px)' ;
+   }    
+});
+
+
+carouselSlide4.addEventListener('transitionend', ()=>{
+    if(carouselImages4[counter4].className === 'firstClone4'){
+         carouselSlide4.style.transition = "none";
+         counter4 = carouselImages4.length - counter4;
+     carouselSlide4.style.transform = 'translateX(' + (size4 * counter4) + 'px)' ;
      }    
   });
