@@ -234,46 +234,6 @@ footer a{
 }
 
 @media screen and (max-width: 1024px) {
-    .nav-links, body, header, .responsive, .carousel-slide img, .carousel-slide2 img, .carousel-slide3 img, .carousel-slide4 img{
-       width: 100%;
-       height: auto;
-     }   
-
-     .both-about-and-carousel, .both-about-and-carousel3, .both-about-and-profilePic{
-        flex-direction: column;
-    }
-
-    .both-about-and-carousel2, .both-about-and-carousel4{
-        flex-direction: column-reverse;
-    }
-
-    .outerDiv, .outerDiv2, .outerDiv3, .outerDiv4, .outerDiv5{
-        overflow: hidden;
-        width: 350px;
-        margin: 0 auto;
-    }
-
-    .carousel-slide, .carousel-slide2, .carousel-slide3, .carousel-slide4{
-        display: flex;
-        width: 350px;
-        margin: 0 auto;
-        
-    }
-
-    .outerDiv .carousel-slide img, .outerDiv2 .carousel-slide2 img ,.outerDiv3 .carousel-slide3 img, .outerDiv4 .carousel-slide4 img{
-        width: 350px;
-        height: auto;
-    }
-
-    footer{
-        height: 120px;
-    }
-   
-   }
-
-
-@media screen and (max-width: 769px) {
-
     nav{
         display: flex;
         justify-content: flex-start;
@@ -325,6 +285,45 @@ footer a{
            transform: translateX(0px);
         }
     }
+    .nav-links, body, header, .responsive, .carousel-slide img, .carousel-slide2 img, .carousel-slide3 img, .carousel-slide4 img{
+       width: 100%;
+       height: auto;
+     }   
+
+     .both-about-and-carousel, .both-about-and-carousel3, .both-about-and-profilePic{
+        flex-direction: column;
+    }
+
+    .both-about-and-carousel2, .both-about-and-carousel4{
+        flex-direction: column-reverse;
+    }
+
+    .outerDiv, .outerDiv2, .outerDiv3, .outerDiv4, .outerDiv5{
+        overflow: hidden;
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    .carousel-slide, .carousel-slide2, .carousel-slide3, .carousel-slide4{
+        display: flex;
+        width: 350px;
+        margin: 0 auto;
+        
+    }
+
+    .outerDiv .carousel-slide img, .outerDiv2 .carousel-slide2 img ,.outerDiv3 .carousel-slide3 img, .outerDiv4 .carousel-slide4 img{
+        width: 350px;
+        height: auto;
+    }
+
+    footer{
+        height: 120px;
+    }
+   
+   }
+
+
+@media screen and (max-width: 769px) {
 
     .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img, .carousel-container3 .carousel-slide3 img, .carousel-container4 .carousel-slide4 img{
         width:350px;
