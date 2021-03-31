@@ -109,7 +109,7 @@ main{
     margin: 0 auto;
 }
 
-.both-about-and-carousel, .both-about-and-carousel2, .both-about-and-carousel3, .both-about-and-carousel4{
+.both-about-and-carousel, .both-about-and-carousel2, .both-about-and-carousel3, .both-about-and-carousel4, .both-about-and-profilePic{
     display: flex;
     flex-wrap: wrap;
 }
@@ -124,11 +124,25 @@ main{
     justify-content: center;
 }
 
-.outerDiv, .outerDiv2, .outerDiv3, .outerDiv4{
+.about-inna{
+    min-width: 280px;
+    flex:1;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.outerDiv, .outerDiv2, .outerDiv3, .outerDiv4, .outerDiv5{
     flex:1;
     width: 350px;
     background-color:  white;
     position: relative;
+}
+
+.outerDiv5{
+    display: flex;
+    justify-content: center;
 }
 
 .carousel-container, .carousel-container2, .carousel-container3, .carousel-container4{  
@@ -172,7 +186,7 @@ main{
        height: auto;
      }   
 
-     .both-about-and-carousel, .both-about-and-carousel3{
+     .both-about-and-carousel, .both-about-and-carousel3, .both-about-and-profilePic{
         flex-direction: column;
     }
 
@@ -180,7 +194,7 @@ main{
         flex-direction: column-reverse;
     }
 
-    .outerDiv, .outerDiv2, .outerDiv3, .outerDiv4{
+    .outerDiv, .outerDiv2, .outerDiv3, .outerDiv4, .outerDiv5{
         overflow: hidden;
         width: 350px;
         margin: 0 auto;
@@ -266,7 +280,11 @@ main{
 
 @media screen and (max-width: 320px){
 
-    .about-carousel-container, .outerDiv, .about-carousel-container2, .outerDiv2, .about-carousel-container3, .outerDiv3, .about-carousel-container4, .outerDiv4{   
+    .nav-links li{
+        width: 100%;
+    }
+
+    .about-carousel-container, .outerDiv, .about-carousel-container2, .outerDiv2, .about-carousel-container3, .outerDiv3, .about-carousel-container4, .outerDiv4, .both-about-and-profilePic, .outerDiv5{   
         width:280px;
         margin: 0 auto;
     }
@@ -275,7 +293,7 @@ main{
         width: 280px;  
     }
 
-    .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img, .carousel-container3 .carousel-slide3 img, .carousel-container4 .carousel-slide4 img{
+    .carousel-container .carousel-slide img, .carousel-container2 .carousel-slide2 img, .carousel-container3 .carousel-slide3 img, .carousel-container4 .carousel-slide4 img, #profilePic{
         width:280px;
         height: auto;
         margin:0 auto;
